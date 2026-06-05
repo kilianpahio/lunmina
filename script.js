@@ -157,13 +157,27 @@
       return;
     }
 
-    // Pas de backend : on simule l'envoi
-    success.hidden = false;
-    form.querySelector('button[type="submit"]').textContent = "Demande envoyée ✓";
-    form.querySelector('button[type="submit"]').disabled = true;
-    setTimeout(function () {
-      form.reset();
-    }, 400);
+    var btn = form.querySelector('button[type="submit"]');
+    btn.textContent = "Envoi en cours…";
+    btn.disabled = true;
+
+    fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: { Accept: "application/json" }
+    }).then(function (res) {
+      if (res.ok) {
+        success.hidden = false;
+        btn.textContent = "Demande envoyée ✓";
+        form.reset();
+      } else {
+        btn.textContent = "Erreur, réessayez";
+        btn.disabled = false;
+      }
+    }).catch(function () {
+      btn.textContent = "Erreur, réessayez";
+      btn.disabled = false;
+    });
   });
 
   /* ---------- 7. Année dynamique (footer) ---------- */
