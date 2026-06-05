@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumara - Sites web professionnels créés avec l'IA</title>
+  <meta name="description" content="Lumara crée votre site web professionnel en 48h grâce à l'IA, à prix accessible. Artisans, restaurateurs, commerçants : votre présence en ligne, sublimée." />
+  <meta property="og:title" content="Lumara - Votre présence en ligne, sublimée par l'IA" />
+  <meta property="og:description" content="Sites web professionnels créés en 48h grâce à l'IA, à prix accessible." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-star">✦</span> Lumara
+      </a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Réalisations</a></li>
+        <li><a href="#pourquoi">Pourquoi nous</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact" class="nav-cta">Devis gratuit</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content fade-in">
+      <span class="hero-badge">Nouvelle génération de création web</span>
+      <h1>Votre site web professionnel <em>en 48h</em>, grâce à l'IA</h1>
+      <p class="hero-sub">Artisans, restaurateurs, commerçants : obtenez enfin un site à la hauteur de votre activité, sans vous ruiner et sans attendre des mois.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn-primary">Demander un devis gratuit</a>
+        <a href="#services" class="btn-ghost">Voir nos offres</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>48h</strong><span>Délai moyen</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>100%</strong><span>Satisfaction garantie</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>Dès 299€</strong><span>Prix transparent</span></div>
+      </div>
+    </div>
+    <div class="hero-visual fade-in">
+      <div class="mockup-browser">
+        <div class="browser-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <div class="browser-url">votre-site.fr</div>
+        </div>
+        <div class="browser-content">
+          <div class="mock-hero-block"></div>
+          <div class="mock-lines">
+            <div class="mock-line w80"></div>
+            <div class="mock-line w60"></div>
+            <div class="mock-line w40"></div>
+          </div>
+          <div class="mock-cards">
+            <div class="mock-card"></div>
+            <div class="mock-card"></div>
+            <div class="mock-card"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLÈME / SOLUTION -->
+  <section class="problem-solution fade-in">
+    <div class="container">
+      <div class="problem-block">
+        <div class="block-icon">⚠️</div>
+        <h3>Sans site web aujourd'hui</h3>
+        <ul>
+          <li>Vos clients ne vous trouvent pas sur Google</li>
+          <li>Vos concurrents captent vos prospects</li>
+          <li>Vous perdez en crédibilité face aux devis</li>
+          <li>Vous dépendez des réseaux sociaux</li>
+        </ul>
+      </div>
+      <div class="solution-arrow">
+        <div class="arrow-line"></div>
+        <div class="arrow-label">Avec <strong>Lumara</strong></div>
+      </div>
+      <div class="solution-block">
+        <div class="block-icon">✦</div>
+        <h3>Votre présence en ligne sublimée</h3>
+        <ul>
+          <li>Un site professionnel visible sur Google dès le lancement</li>
+          <li>Un design sur-mesure qui reflète votre image</li>
+          <li>Livré en 48h, opérationnel immédiatement</li>
+          <li>Un investissement qui se rentabilise dès le premier client</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-badge">Nos offres</span>
+        <h2>Des formules claires, sans surprises</h2>
+        <p>Choisissez la formule adaptée à votre projet. Tout est inclus dans le prix.</p>
+      </div>
+      <div class="services-grid fade-in">
+        <div class="service-card">
+          <div class="card-top">
+            <span class="service-icon">◈</span>
+            <h3>One-Page</h3>
+            <div class="price">à partir de <strong>299€</strong></div>
+          </div>
+          <ul class="service-features">
+            <li>1 page complète et percutante</li>
+            <li>Design responsive mobile</li>
+            <li>Formulaire de contact</li>
+            <li>Optimisation SEO de base</li>
+            <li>Livraison en 24h</li>
+          </ul>
+          <a href="#contact" class="btn-card">Je veux ce site</a>
+        </div>
+        <div class="service-card featured">
+          <div class="card-badge">Le plus populaire</div>
+          <div class="card-top">
+            <span class="service-icon">◆</span>
+            <h3>Site Vitrine</h3>
+            <div class="price">à partir de <strong>599€</strong></div>
+          </div>
+          <ul class="service-features">
+            <li>Jusqu'à 5 pages personnalisées</li>
+            <li>Design premium sur-mesure</li>
+            <li>Galerie photos / portfolio</li>
+            <li>SEO avancé + Google Maps</li>
+            <li>Livraison en 48h</li>
+            <li>1 mois de support inclus</li>
+          </ul>
+          <a href="#contact" class="btn-card">Je veux ce site</a>
+        </div>
+        <div class="service-card">
+          <div class="card-top">
+            <span class="service-icon">◇</span>
+            <h3>E-commerce</h3>
+            <div class="price">à partir de <strong>999€</strong></div>
+          </div>
+          <ul class="service-features">
+            <li>Boutique en ligne complète</li>
+            <li>Jusqu'à 30 produits intégrés</li>
+            <li>Paiement sécurisé en ligne</li>
+            <li>Gestion des commandes</li>
+            <li>Livraison en 72h</li>
+            <li>Formation à la prise en main</li>
+          </ul>
+          <a href="#contact" class="btn-card">Je veux ce site</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-badge">Réalisations</span>
+        <h2>Des sites qui travaillent pour vous</h2>
+        <p>Quelques exemples de ce que Lumara peut créer pour votre activité.</p>
+      </div>
+      <div class="portfolio-grid fade-in">
+        <div class="portfolio-card">
+          <div class="portfolio-img restaurant">
+            <div class="portfolio-overlay">
+              <span>Restaurant La Bella Vita</span>
+              <small>Site Vitrine 5 pages</small>
+            </div>
+            <div class="portfolio-visual">
+              <div class="pv-header"></div>
+              <div class="pv-content">
+                <div class="pv-block"></div>
+                <div class="pv-block small"></div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h4>La Bella Vita</h4>
+            <span class="portfolio-tag">Restaurant gastronomique</span>
+            <p>Site vitrine avec menu interactif, galerie et réservation en ligne.</p>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-img artisan">
+            <div class="portfolio-overlay">
+              <span>Masson Menuiserie</span>
+              <small>Site Vitrine + Portfolio</small>
+            </div>
+            <div class="portfolio-visual">
+              <div class="pv-header dark"></div>
+              <div class="pv-content">
+                <div class="pv-block"></div>
+                <div class="pv-block small"></div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h4>Masson Menuiserie</h4>
+            <span class="portfolio-tag">Artisan menuisier</span>
+            <p>Site professionnel avec portfolio de réalisations et demande de devis.</p>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-img coach">
+            <div class="portfolio-overlay">
+              <span>Sophie Martin Coaching</span>
+              <small>One-Page</small>
+            </div>
+            <div class="portfolio-visual">
+              <div class="pv-header accent"></div>
+              <div class="pv-content">
+                <div class="pv-block"></div>
+                <div class="pv-block small"></div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h4>Sophie Martin Coaching</h4>
+            <span class="portfolio-tag">Coach de vie</span>
+            <p>Landing page épurée avec témoignages clients et prise de RDV.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POURQUOI LUMARA -->
+  <section class="why-us" id="pourquoi">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-badge">Pourquoi Lumara</span>
+        <h2>Ce qui nous différencie vraiment</h2>
+      </div>
+      <div class="why-grid fade-in">
+        <div class="why-card">
+          <div class="why-icon">⚡</div>
+          <h4>Rapidité 48h</h4>
+          <p>Pendant que vos concurrents attendent 3 mois leur agence traditionnelle, votre site est déjà en ligne.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">💎</div>
+          <h4>Prix transparent</h4>
+          <p>Pas de surprise cachée. Vous savez exactement ce que vous payez avant de signer. Zéro frais supplémentaire.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🤝</div>
+          <h4>Accompagnement inclus</h4>
+          <p>On vous explique tout. Pas de jargon technique, pas d'abandon post-livraison. On reste disponibles.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">✅</div>
+          <h4>Satisfaction garantie</h4>
+          <p>Si le résultat ne vous convient pas, on reprend jusqu'à ce que vous soyez 100% satisfait. Sans condition.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TÉMOIGNAGES -->
+  <section class="testimonials fade-in">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Témoignages</span>
+        <h2>Ils nous font confiance</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Mon site a été livré en moins de 48h, exactement comme promis. Depuis, j'ai eu 3 nouveaux clients qui m'ont trouvé sur Google. Investissement remboursé en 2 semaines."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">M</div>
+            <div>
+              <strong>Marc D.</strong>
+              <span>Plombier, Lyon</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card featured-t">
+          <div class="stars">★★★★★</div>
+          <p>"J'avais peur que ce soit compliqué. En fait Kilian a tout géré, je n'avais qu'à valider. Le résultat est vraiment professionnel, bien au-delà de mes attentes pour ce prix."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">S</div>
+            <div>
+              <strong>Sarah L.</strong>
+              <span>Esthéticienne, Marseille</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Notre restaurant avait besoin d'une vitrine sérieuse. Lumara a capturé exactement l'ambiance qu'on voulait. Les clients nous disent souvent qu'ils ont réservé grâce au site."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">J</div>
+            <div>
+              <strong>Jean-Pierre R.</strong>
+              <span>Restaurateur, Bordeaux</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-badge">FAQ</span>
+        <h2>Vos questions, nos réponses</h2>
+      </div>
+      <div class="faq-list fade-in">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Comment se passe le processus de création ?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>C'est simple : vous nous envoyez un message avec votre activité, vos besoins et vos préférences visuelles. On vous propose une maquette sous 24h. Vous validez, on finalise. Votre site est en ligne en 48h.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Suis-je propriétaire de mon site après livraison ?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Oui, 100%. Le site vous appartient entièrement. Vous récupérez tous les fichiers sources. Vous pouvez l'héberger où vous voulez et le modifier comme vous le souhaitez.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Le site sera-t-il visible sur Google ?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Tous nos sites sont optimisés pour le SEO de base : balises, vitesse, mobile-first. L'indexation Google prend généralement 2 à 4 semaines après la mise en ligne. Pour des résultats plus rapides, nous proposons aussi un accompagnement SEO local.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Que se passe-t-il si je ne suis pas satisfait du résultat ?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>On reprend jusqu'à ce que vous soyez satisfait, sans frais supplémentaires. Notre réputation repose sur votre satisfaction. Si après plusieurs révisions vous n'êtes toujours pas content, on vous rembourse intégralement.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Faut-il payer un abonnement mensuel ?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Non, le prix affiché est un paiement unique. Les seuls frais récurrents sont l'hébergement et le nom de domaine (environ 50-100€/an selon votre choix), que vous gérez vous-même ou qu'on peut gérer pour vous moyennant un petit forfait annuel.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-wrapper fade-in">
+        <div class="contact-info">
+          <span class="section-badge">Contact</span>
+          <h2>Parlons de votre projet</h2>
+          <p>Répondez à quelques questions et recevez un devis personnalisé sous 24h. C'est gratuit et sans engagement.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="contact-icon">✉</span>
+              <a href="mailto:contact@lumara.fr">contact@lumara.fr</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">⚡</span>
+              <span>Réponse garantie sous 24h</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Votre nom</label>
+              <input type="text" id="name" name="name" placeholder="Jean Dupont" required />
+              <span class="field-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Votre email</label>
+              <input type="email" id="email" name="email" placeholder="jean@exemple.fr" required />
+              <span class="field-error" id="emailError"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="project">Type de projet</label>
+            <select id="project" name="project" required>
+              <option value="">Choisissez une formule</option>
+              <option value="onepage">Site One-Page (à partir de 299€)</option>
+              <option value="vitrine">Site Vitrine (à partir de 599€)</option>
+              <option value="ecommerce">Site E-commerce (à partir de 999€)</option>
+              <option value="autre">Autre / Je ne sais pas encore</option>
+            </select>
+            <span class="field-error" id="projectError"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Décrivez votre activité</label>
+            <textarea id="message" name="message" rows="4" placeholder="Ex : Je suis électricien à Aix-en-Provence, j'aimerais un site simple pour que mes clients me trouvent sur Google..." required></textarea>
+            <span class="field-error" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn-submit" id="submitBtn">
+            <span class="btn-text">Envoyer ma demande</span>
+            <span class="btn-icon">→</span>
+          </button>
+          <div class="form-success" id="formSuccess">
+            <span>✓</span> Votre demande a bien été envoyée ! On vous répond sous 24h.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo">✦ Lumara</span>
+          <p>Votre présence en ligne, sublimée par l'IA.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#services">Services</a>
+          <a href="#portfolio">Réalisations</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Lumara. Tous droits réservés.</p>
+        <p>contact@lumara.fr</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
