@@ -3,461 +3,442 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lumara - Sites web professionnels créés avec l'IA</title>
-  <meta name="description" content="Lumara crée votre site web professionnel en 48h grâce à l'IA, à prix accessible. Artisans, restaurateurs, commerçants : votre présence en ligne, sublimée." />
-  <meta property="og:title" content="Lumara - Votre présence en ligne, sublimée par l'IA" />
-  <meta property="og:description" content="Sites web professionnels créés en 48h grâce à l'IA, à prix accessible." />
+  <title>Lunmina — Création de sites web sur-mesure | Sites professionnels en 72h</title>
+  <meta name="description" content="Lunmina crée des sites web professionnels en 72h, à prix accessible. Pour PME, artisans, restaurateurs et commerçants locaux. Devis gratuit." />
+  <meta name="keywords" content="création site web, agence web, site vitrine, e-commerce, PME, artisan, restaurateur" />
+  <meta name="author" content="Lunmina" />
+
+  <!-- Open Graph / SEO -->
   <meta property="og:type" content="website" />
+  <meta property="og:title" content="Lunmina — Votre présence en ligne, sublimée" />
+  <meta property="og:description" content="Sites web professionnels créés en 72h, à prix accessible. Pour les PME, artisans et commerçants locaux." />
+  <meta property="og:image" content="og-image.svg" />
+  <meta property="og:url" content="https://lunmina.fr" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="#" class="logo">
-        <span class="logo-star">✦</span> Lumara
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="logo" aria-label="Lunmina — accueil">
+        <span class="logo__mark" aria-hidden="true"></span>
+        <span class="logo__text">Lunmina</span>
       </a>
-      <ul class="nav-links">
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Réalisations</a></li>
-        <li><a href="#pourquoi">Pourquoi nous</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contact" class="nav-cta">Devis gratuit</a></li>
-      </ul>
-      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+
+      <nav class="nav__links" id="navLinks" aria-label="Navigation principale">
+        <a href="#solution">Pourquoi un site</a>
+        <a href="#services">Offres</a>
+        <a href="#portfolio">Réalisations</a>
+        <a href="#avantages">Pourquoi nous</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <a href="#contact" class="btn btn--gold nav__cta">Devis gratuit</a>
+
+      <button class="nav__burger" id="navBurger" aria-label="Ouvrir le menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
-  </nav>
+  </header>
 
-  <!-- HERO -->
-  <section class="hero" id="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-content fade-in">
-      <span class="hero-badge">Nouvelle génération de création web</span>
-      <h1>Votre site web professionnel <em>en 48h</em>, grâce à l'IA</h1>
-      <p class="hero-sub">Artisans, restaurateurs, commerçants : obtenez enfin un site à la hauteur de votre activité, sans vous ruiner et sans attendre des mois.</p>
-      <div class="hero-cta">
-        <a href="#contact" class="btn-primary">Demander un devis gratuit</a>
-        <a href="#services" class="btn-ghost">Voir nos offres</a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat"><strong>48h</strong><span>Délai moyen</span></div>
-        <div class="stat-divider"></div>
-        <div class="stat"><strong>100%</strong><span>Satisfaction garantie</span></div>
-        <div class="stat-divider"></div>
-        <div class="stat"><strong>Dès 299€</strong><span>Prix transparent</span></div>
-      </div>
-    </div>
-    <div class="hero-visual fade-in">
-      <div class="mockup-browser">
-        <div class="browser-bar">
-          <span class="dot red"></span>
-          <span class="dot yellow"></span>
-          <span class="dot green"></span>
-          <div class="browser-url">votre-site.fr</div>
-        </div>
-        <div class="browser-content">
-          <div class="mock-hero-block"></div>
-          <div class="mock-lines">
-            <div class="mock-line w80"></div>
-            <div class="mock-line w60"></div>
-            <div class="mock-line w40"></div>
-          </div>
-          <div class="mock-cards">
-            <div class="mock-card"></div>
-            <div class="mock-card"></div>
-            <div class="mock-card"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero__glow hero__glow--1" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--2" aria-hidden="true"></div>
+      <svg class="hero__lines" viewBox="0 0 1440 600" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#4A1D96" stop-opacity="0" />
+            <stop offset="45%" stop-color="#7c3aed" stop-opacity="0.7" />
+            <stop offset="100%" stop-color="#D4AF37" stop-opacity="0.9" />
+          </linearGradient>
+        </defs>
+        <path d="M-50,420 C300,300 520,520 760,360 C980,210 1200,360 1500,220" />
+        <path d="M-50,470 C320,360 540,560 780,400 C1000,255 1220,400 1500,270" />
+        <path d="M-50,520 C340,420 560,600 800,440 C1020,300 1240,440 1500,320" />
+        <path d="M-50,370 C280,250 500,470 740,320 C960,180 1180,320 1500,180" />
+      </svg>
 
-  <!-- PROBLÈME / SOLUTION -->
-  <section class="problem-solution fade-in">
-    <div class="container">
-      <div class="problem-block">
-        <div class="block-icon">⚠️</div>
-        <h3>Sans site web aujourd'hui</h3>
-        <ul>
-          <li>Vos clients ne vous trouvent pas sur Google</li>
-          <li>Vos concurrents captent vos prospects</li>
-          <li>Vous perdez en crédibilité face aux devis</li>
-          <li>Vous dépendez des réseaux sociaux</li>
+      <div class="container hero__content reveal">
+        <span class="pill">✦ Création de sites web sur-mesure</span>
+        <h1 class="hero__title">Votre présence en ligne,<br /><em>enfin sublimée</em></h1>
+        <p class="hero__subtitle">Sites web professionnels créés en <strong>72h</strong>, à prix accessible. Pensés pour les PME, artisans, restaurateurs et commerçants qui veulent enfin exister en ligne.</p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--gold btn--lg">Demander un devis gratuit</a>
+          <a href="#services" class="btn btn--ghost btn--lg">Voir les offres</a>
+        </div>
+        <ul class="hero__trust">
+          <li><strong>72h</strong> de livraison</li>
+          <li><strong>349€</strong> à partir de</li>
+          <li><strong>100%</strong> satisfait ou ajusté</li>
         </ul>
       </div>
-      <div class="solution-arrow">
-        <div class="arrow-line"></div>
-        <div class="arrow-label">Avec <strong>Lumara</strong></div>
-      </div>
-      <div class="solution-block">
-        <div class="block-icon">✦</div>
-        <h3>Votre présence en ligne sublimée</h3>
-        <ul>
-          <li>Un site professionnel visible sur Google dès le lancement</li>
-          <li>Un design sur-mesure qui reflète votre image</li>
-          <li>Livré en 48h, opérationnel immédiatement</li>
-          <li>Un investissement qui se rentabilise dès le premier client</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- SERVICES -->
-  <section class="services" id="services">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-badge">Nos offres</span>
-        <h2>Des formules claires, sans surprises</h2>
-        <p>Choisissez la formule adaptée à votre projet. Tout est inclus dans le prix.</p>
-      </div>
-      <div class="services-grid fade-in">
-        <div class="service-card">
-          <div class="card-top">
-            <span class="service-icon">◈</span>
-            <h3>One-Page</h3>
-            <div class="price">à partir de <strong>299€</strong></div>
-          </div>
-          <ul class="service-features">
-            <li>1 page complète et percutante</li>
-            <li>Design responsive mobile</li>
-            <li>Formulaire de contact</li>
-            <li>Optimisation SEO de base</li>
-            <li>Livraison en 24h</li>
-          </ul>
-          <a href="#contact" class="btn-card">Je veux ce site</a>
+    <!-- ============ PROBLÈME / SOLUTION ============ -->
+    <section class="section solution" id="solution">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="pill pill--violet">Le constat</span>
+          <h2 class="section__title">Aujourd'hui, ne pas avoir de site,<br /><em>c'est être invisible</em></h2>
+          <p class="section__lead">8 clients sur 10 cherchent en ligne avant de pousser une porte. Sans site — ou avec un site vieillissant — vous laissez vos concurrents capter cette clientèle.</p>
         </div>
-        <div class="service-card featured">
-          <div class="card-badge">Le plus populaire</div>
-          <div class="card-top">
-            <span class="service-icon">◆</span>
-            <h3>Site Vitrine</h3>
-            <div class="price">à partir de <strong>599€</strong></div>
-          </div>
-          <ul class="service-features">
-            <li>Jusqu'à 5 pages personnalisées</li>
-            <li>Design premium sur-mesure</li>
-            <li>Galerie photos / portfolio</li>
-            <li>SEO avancé + Google Maps</li>
-            <li>Livraison en 48h</li>
-            <li>1 mois de support inclus</li>
-          </ul>
-          <a href="#contact" class="btn-card">Je veux ce site</a>
-        </div>
-        <div class="service-card">
-          <div class="card-top">
-            <span class="service-icon">◇</span>
-            <h3>E-commerce</h3>
-            <div class="price">à partir de <strong>999€</strong></div>
-          </div>
-          <ul class="service-features">
-            <li>Boutique en ligne complète</li>
-            <li>Jusqu'à 30 produits intégrés</li>
-            <li>Paiement sécurisé en ligne</li>
-            <li>Gestion des commandes</li>
-            <li>Livraison en 72h</li>
-            <li>Formation à la prise en main</li>
-          </ul>
-          <a href="#contact" class="btn-card">Je veux ce site</a>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- PORTFOLIO -->
-  <section class="portfolio" id="portfolio">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-badge">Réalisations</span>
-        <h2>Des sites qui travaillent pour vous</h2>
-        <p>Quelques exemples de ce que Lumara peut créer pour votre activité.</p>
+        <div class="split reveal">
+          <div class="split__col split__col--problem">
+            <h3 class="split__title">Sans site, ou avec un vieux site</h3>
+            <ul class="checklist checklist--cross">
+              <li>Vous restez introuvable sur Google et Maps</li>
+              <li>Vos clients doutent de votre sérieux</li>
+              <li>Vous dépendez à 100% du bouche-à-oreille</li>
+              <li>Refaire un site coûte cher et prend des semaines</li>
+            </ul>
+          </div>
+          <div class="split__col split__col--solution">
+            <h3 class="split__title">Avec Lunmina</h3>
+            <ul class="checklist checklist--check">
+              <li>Un site élégant en ligne en 72h chrono</li>
+              <li>Des textes et visuels soignés, prêts à l'emploi</li>
+              <li>Un référencement local soigné dès le départ</li>
+              <li>Un budget clair, sans surprise, dès 349€</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="solution__note reveal">
+          <p>Un vrai savoir-faire de designers et une méthode rodée : nous produisons vite et bien, pour vous offrir un résultat haut de gamme à un prix qui reste accessible.</p>
+        </div>
       </div>
-      <div class="portfolio-grid fade-in">
-        <div class="portfolio-card">
-          <div class="portfolio-img restaurant">
-            <div class="portfolio-overlay">
-              <span>Restaurant La Bella Vita</span>
-              <small>Site Vitrine 5 pages</small>
-            </div>
-            <div class="portfolio-visual">
-              <div class="pv-header"></div>
-              <div class="pv-content">
-                <div class="pv-block"></div>
-                <div class="pv-block small"></div>
+    </section>
+
+    <!-- ============ SERVICES / OFFRES ============ -->
+    <section class="section services" id="services">
+      <div class="services__glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="pill">Nos offres</span>
+          <h2 class="section__title section__title--light">Des formules claires,<br /><em>des prix transparents</em></h2>
+          <p class="section__lead section__lead--light">Pas de devis à rallonge ni de coûts cachés. Vous choisissez, on s'occupe de tout.</p>
+        </div>
+
+        <div class="pricing reveal">
+          <article class="price-card">
+            <header class="price-card__head">
+              <h3 class="price-card__name">Essentiel</h3>
+              <p class="price-card__desc">Idéal pour démarrer simplement</p>
+            </header>
+            <p class="price-card__price"><span class="price-card__from">à partir de</span><span class="price-card__amount">349€</span></p>
+            <ul class="price-card__features">
+              <li>Site 1 page, élégant et complet</li>
+              <li>Menu / présentation de vos offres</li>
+              <li>Bouton contact &amp; itinéraire</li>
+              <li>Localisation Google Maps</li>
+              <li>Livré en 72h</li>
+            </ul>
+            <a href="#contact" class="btn btn--violet price-card__cta">Choisir cette offre</a>
+          </article>
+
+          <article class="price-card price-card--featured">
+            <span class="price-card__badge">Le plus choisi</span>
+            <header class="price-card__head">
+              <h3 class="price-card__name">Pro</h3>
+              <p class="price-card__desc">Pour tout présenter en grand</p>
+            </header>
+            <p class="price-card__price"><span class="price-card__from">à partir de</span><span class="price-card__amount">499€</span></p>
+            <ul class="price-card__features">
+              <li>Site de 3 à 5 pages</li>
+              <li>Galerie photos</li>
+              <li>Formulaire de réservation</li>
+              <li>Localisation Google Maps</li>
+              <li>Livré en 72h, retouches incluses</li>
+            </ul>
+            <a href="#contact" class="btn btn--gold price-card__cta">Choisir cette offre</a>
+          </article>
+
+          <article class="price-card price-card--plan">
+            <header class="price-card__head">
+              <h3 class="price-card__name">Sérénité</h3>
+              <p class="price-card__desc">On s'occupe de tout, chaque mois</p>
+            </header>
+            <p class="price-card__price"><span class="price-card__from">maintenance &middot; sans engagement</span><span class="price-card__amount">39€<span class="price-card__per">/mois</span></span></p>
+            <ul class="price-card__features">
+              <li>Hébergement inclus</li>
+              <li>Nom de domaine inclus</li>
+              <li>Mises à jour de votre contenu</li>
+              <li>Support &amp; assistance réactive</li>
+            </ul>
+            <a href="#contact" class="btn btn--violet price-card__cta">Ajouter la maintenance</a>
+          </article>
+        </div>
+        <p class="services__foot reveal">Création livrée en 72h. Maintenance optionnelle, sans engagement et résiliable à tout moment. Devis gratuit sous 24h.</p>
+      </div>
+    </section>
+
+    <!-- ============ PORTFOLIO ============ -->
+    <section class="section portfolio" id="portfolio">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="pill pill--violet">Réalisations</span>
+          <h2 class="section__title">Un aperçu de ce que<br /><em>nous créons</em></h2>
+          <p class="section__lead">Un exemple concret de ce que nous savons faire.</p>
+        </div>
+
+        <div class="folio reveal">
+          <article class="folio-card folio-card--live">
+            <a class="folio-card__shot folio-card__shot--bistro" href="https://lebistrotahiti.netlify.app/" target="_blank" rel="noopener" aria-label="Voir le site Le Bistro Tahiti (nouvel onglet)">
+              <div class="browser">
+                <span class="browser__dots"><i></i><i></i><i></i></span>
+                <span class="browser__url">lebistrotahiti.netlify.app</span>
               </div>
-            </div>
-          </div>
-          <div class="portfolio-info">
-            <h4>La Bella Vita</h4>
-            <span class="portfolio-tag">Restaurant gastronomique</span>
-            <p>Site vitrine avec menu interactif, galerie et réservation en ligne.</p>
-          </div>
-        </div>
-        <div class="portfolio-card">
-          <div class="portfolio-img artisan">
-            <div class="portfolio-overlay">
-              <span>Masson Menuiserie</span>
-              <small>Site Vitrine + Portfolio</small>
-            </div>
-            <div class="portfolio-visual">
-              <div class="pv-header dark"></div>
-              <div class="pv-content">
-                <div class="pv-block"></div>
-                <div class="pv-block small"></div>
+              <div class="folio-live" data-embed>
+                <iframe src="https://lebistrotahiti.netlify.app/" title="Aperçu du site Le Bistro Tahiti" loading="lazy" scrolling="no" tabindex="-1" aria-hidden="true"></iframe>
+                <span class="folio-live__veil" aria-hidden="true"></span>
+                <span class="folio-live__hint">Voir le site live ↗</span>
               </div>
+            </a>
+            <div class="folio-card__body">
+              <span class="folio-card__tag folio-card__tag--live"><span class="dot" aria-hidden="true"></span>Exemple fictif · Restaurant</span>
+              <h3 class="folio-card__title">Le Bistro Tahiti</h3>
+              <p class="folio-card__text">Site de démonstration <strong>fictif</strong> pour un restaurant bistronomique : présentation du chef, carte, galerie, avis clients et réservation en ligne. Un exemple concret de notre savoir-faire.</p>
+              <a class="folio-card__link" href="https://lebistrotahiti.netlify.app/" target="_blank" rel="noopener">Voir l'exemple en ligne <span aria-hidden="true">↗</span></a>
             </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ POURQUOI LUNMINA / AVANTAGES ============ -->
+    <section class="section advantages" id="avantages">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="pill">Pourquoi Lunmina</span>
+          <h2 class="section__title">Le soin d'une agence,<br /><em>la vitesse en plus</em></h2>
+        </div>
+
+        <div class="adv-grid reveal">
+          <article class="adv-card">
+            <span class="adv-card__num">01</span>
+            <h3 class="adv-card__title">Livré en 72h</h3>
+            <p class="adv-card__text">Votre site en ligne en trois jours ouvrés. Une méthode rodée accélère la production, sans jamais rogner sur la qualité.</p>
+          </article>
+          <article class="adv-card">
+            <span class="adv-card__num">02</span>
+            <h3 class="adv-card__title">Prix transparent</h3>
+            <p class="adv-card__text">Un tarif annoncé, validé avant de commencer. Aucun coût caché, aucune mauvaise surprise à la facture.</p>
+          </article>
+          <article class="adv-card">
+            <span class="adv-card__num">03</span>
+            <h3 class="adv-card__title">Accompagnement inclus</h3>
+            <p class="adv-card__text">Un interlocuteur unique, des conseils et une prise en main expliquée pas à pas. Vous n'êtes jamais seul.</p>
+          </article>
+          <article class="adv-card">
+            <span class="adv-card__num">04</span>
+            <h3 class="adv-card__title">Satisfaction garantie</h3>
+            <p class="adv-card__text">On ajuste jusqu'à ce que ça vous ressemble vraiment. Votre image mérite que rien ne soit laissé au hasard.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MÉTHODE / COMMENT ÇA MARCHE ============ -->
+    <section class="section process" id="methode">
+      <div class="process__glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="pill">La méthode Lunmina</span>
+          <h2 class="section__title section__title--light">Votre site en ligne,<br /><em>en 4 étapes</em></h2>
+          <p class="section__lead section__lead--light">Simple, rapide et sans jargon. Vous nous parlez de votre activité, on s'occupe du reste.</p>
+        </div>
+
+        <ol class="steps reveal">
+          <li class="step">
+            <span class="step__num">01</span>
+            <h3 class="step__title">On échange</h3>
+            <p class="step__text">Un premier contact gratuit pour cerner votre activité, vos envies et vos besoins.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">02</span>
+            <h3 class="step__title">On crée</h3>
+            <p class="step__text">Vous recevez une première version de votre site sous 72h, soignée et prête à découvrir.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">03</span>
+            <h3 class="step__title">On ajuste</h3>
+            <p class="step__text">On affine ensemble les textes, les visuels et les détails jusqu'à ce que ça vous ressemble.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">04</span>
+            <h3 class="step__title">En ligne</h3>
+            <p class="step__text">On publie votre site, on configure le domaine et on vous explique comment le gérer.</p>
+          </li>
+        </ol>
+
+        <div class="process__cta reveal">
+          <a href="#contact" class="btn btn--gold btn--lg">Démarrer mon projet</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section faq" id="faq">
+      <div class="container container--narrow">
+        <div class="section__head reveal">
+          <span class="pill pill--violet">Questions fréquentes</span>
+          <h2 class="section__title">Tout ce que vous<br /><em>vous demandez</em></h2>
+        </div>
+
+        <div class="accordion reveal" id="accordion">
+          <div class="acc-item">
+            <button class="acc-item__q" aria-expanded="false">
+              <span>Comment livrez-vous un site en seulement 72h ?</span>
+              <span class="acc-item__icon" aria-hidden="true"></span>
+            </button>
+            <div class="acc-item__a"><p>Une méthode rodée, des modèles éprouvés et notre savoir-faire de designers. Vous nous transmettez vos informations, et nous livrons une première version sous 72h ouvrées, prête à être ajustée.</p></div>
           </div>
-          <div class="portfolio-info">
-            <h4>Masson Menuiserie</h4>
-            <span class="portfolio-tag">Artisan menuisier</span>
-            <p>Site professionnel avec portfolio de réalisations et demande de devis.</p>
+          <div class="acc-item">
+            <button class="acc-item__q" aria-expanded="false">
+              <span>Que dois-je préparer de mon côté ?</span>
+              <span class="acc-item__icon" aria-hidden="true"></span>
+            </button>
+            <div class="acc-item__a"><p>L'essentiel : votre logo si vous en avez un, quelques photos, et une idée de vos services. Si vous manquez de contenu, nous le rédigeons pour vous et nous vous proposons des visuels adaptés.</p></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-item__q" aria-expanded="false">
+              <span>Les prix affichés sont-ils définitifs ?</span>
+              <span class="acc-item__icon" aria-hidden="true"></span>
+            </button>
+            <div class="acc-item__a"><p>Ce sont des tarifs de départ. Après un court échange, nous vous envoyons un devis fixe et transparent sous 24h. Le prix validé ne bouge plus : pas de surprise en cours de route.</p></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-item__q" aria-expanded="false">
+              <span>Puis-je modifier mon site moi-même ensuite ?</span>
+              <span class="acc-item__icon" aria-hidden="true"></span>
+            </button>
+            <div class="acc-item__a"><p>Oui. Nous vous remettons un site facile à mettre à jour et une courte formation est incluse. Vous pouvez aussi nous confier les mises à jour via une formule de maintenance optionnelle.</p></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-item__q" aria-expanded="false">
+              <span>Et l'hébergement et le nom de domaine ?</span>
+              <span class="acc-item__icon" aria-hidden="true"></span>
+            </button>
+            <div class="acc-item__a"><p>Nous vous accompagnons pour choisir et configurer votre nom de domaine et votre hébergement. Le coût (souvent quelques euros par mois) reste à votre charge et vous appartient entièrement.</p></div>
           </div>
         </div>
-        <div class="portfolio-card">
-          <div class="portfolio-img coach">
-            <div class="portfolio-overlay">
-              <span>Sophie Martin Coaching</span>
-              <small>One-Page</small>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="contact__glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="contact__wrap">
+          <div class="contact__intro reveal">
+            <span class="pill">Parlons de votre projet</span>
+            <h2 class="section__title section__title--light">Demandez votre<br /><em>devis gratuit</em></h2>
+            <p class="section__lead section__lead--light">Réponse sous 24h, sans engagement. Dites-nous où vous en êtes, on s'occupe du reste.</p>
+            <ul class="contact__points">
+              <li>Devis personnalisé gratuit</li>
+              <li>Premier échange offert</li>
+              <li>Aucune obligation</li>
+            </ul>
+            <a class="contact__email" href="mailto:contact@lunmina.fr">contact@lunmina.fr</a>
+          </div>
+
+          <form class="contact__form reveal" id="contactForm" novalidate>
+            <div class="field">
+              <label for="name">Nom complet</label>
+              <input type="text" id="name" name="name" autocomplete="name" placeholder="Jean Dupont" />
+              <span class="field__error" data-error-for="name"></span>
             </div>
-            <div class="portfolio-visual">
-              <div class="pv-header accent"></div>
-              <div class="pv-content">
-                <div class="pv-block"></div>
-                <div class="pv-block small"></div>
+            <div class="field">
+              <label for="email">Adresse email</label>
+              <input type="email" id="email" name="email" autocomplete="email" placeholder="jean@exemple.fr" />
+              <span class="field__error" data-error-for="email"></span>
+            </div>
+            <div class="field">
+              <span class="field__label">Formule(s) souhaitée(s) <span class="field__hint">— plusieurs choix possibles</span></span>
+              <div class="checks" role="group" aria-label="Formule(s) souhaitée(s)">
+                <label class="check">
+                  <input type="checkbox" name="project" value="essentiel" />
+                  <span class="check__box" aria-hidden="true"></span>
+                  <span class="check__label">Essentiel <small>dès 349€</small></span>
+                </label>
+                <label class="check">
+                  <input type="checkbox" name="project" value="pro" />
+                  <span class="check__box" aria-hidden="true"></span>
+                  <span class="check__label">Pro <small>dès 499€</small></span>
+                </label>
+                <label class="check">
+                  <input type="checkbox" name="project" value="serenite" />
+                  <span class="check__box" aria-hidden="true"></span>
+                  <span class="check__label">Sérénité <small>39€/mois</small></span>
+                </label>
+                <label class="check">
+                  <input type="checkbox" name="project" value="autre" />
+                  <span class="check__box" aria-hidden="true"></span>
+                  <span class="check__label">Autre <small>je ne sais pas encore</small></span>
+                </label>
               </div>
+              <span class="field__error" data-error-for="project"></span>
             </div>
-          </div>
-          <div class="portfolio-info">
-            <h4>Sophie Martin Coaching</h4>
-            <span class="portfolio-tag">Coach de vie</span>
-            <p>Landing page épurée avec témoignages clients et prise de RDV.</p>
-          </div>
+            <div class="field">
+              <label for="message">Votre message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Parlez-nous de votre activité et de vos besoins…"></textarea>
+              <span class="field__error" data-error-for="message"></span>
+            </div>
+            <button type="submit" class="btn btn--gold btn--block btn--lg">Envoyer ma demande</button>
+            <p class="contact__success" id="formSuccess" hidden>Merci ! Votre demande a bien été envoyée. Nous revenons vers vous sous 24h. ✦</p>
+          </form>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- POURQUOI LUMARA -->
-  <section class="why-us" id="pourquoi">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-badge">Pourquoi Lumara</span>
-        <h2>Ce qui nous différencie vraiment</h2>
-      </div>
-      <div class="why-grid fade-in">
-        <div class="why-card">
-          <div class="why-icon">⚡</div>
-          <h4>Rapidité 48h</h4>
-          <p>Pendant que vos concurrents attendent 3 mois leur agence traditionnelle, votre site est déjà en ligne.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon">💎</div>
-          <h4>Prix transparent</h4>
-          <p>Pas de surprise cachée. Vous savez exactement ce que vous payez avant de signer. Zéro frais supplémentaire.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon">🤝</div>
-          <h4>Accompagnement inclus</h4>
-          <p>On vous explique tout. Pas de jargon technique, pas d'abandon post-livraison. On reste disponibles.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon">✅</div>
-          <h4>Satisfaction garantie</h4>
-          <p>Si le résultat ne vous convient pas, on reprend jusqu'à ce que vous soyez 100% satisfait. Sans condition.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TÉMOIGNAGES -->
-  <section class="testimonials fade-in">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-badge">Témoignages</span>
-        <h2>Ils nous font confiance</h2>
-      </div>
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <div class="stars">★★★★★</div>
-          <p>"Mon site a été livré en moins de 48h, exactement comme promis. Depuis, j'ai eu 3 nouveaux clients qui m'ont trouvé sur Google. Investissement remboursé en 2 semaines."</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">M</div>
-            <div>
-              <strong>Marc D.</strong>
-              <span>Plombier, Lyon</span>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card featured-t">
-          <div class="stars">★★★★★</div>
-          <p>"J'avais peur que ce soit compliqué. En fait Kilian a tout géré, je n'avais qu'à valider. Le résultat est vraiment professionnel, bien au-delà de mes attentes pour ce prix."</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">S</div>
-            <div>
-              <strong>Sarah L.</strong>
-              <span>Esthéticienne, Marseille</span>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <div class="stars">★★★★★</div>
-          <p>"Notre restaurant avait besoin d'une vitrine sérieuse. Lumara a capturé exactement l'ambiance qu'on voulait. Les clients nous disent souvent qu'ils ont réservé grâce au site."</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">J</div>
-            <div>
-              <strong>Jean-Pierre R.</strong>
-              <span>Restaurateur, Bordeaux</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-badge">FAQ</span>
-        <h2>Vos questions, nos réponses</h2>
-      </div>
-      <div class="faq-list fade-in">
-        <div class="faq-item">
-          <button class="faq-question">
-            <span>Comment se passe le processus de création ?</span>
-            <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
-          </button>
-          <div class="faq-answer">
-            <p>C'est simple : vous nous envoyez un message avec votre activité, vos besoins et vos préférences visuelles. On vous propose une maquette sous 24h. Vous validez, on finalise. Votre site est en ligne en 48h.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">
-            <span>Suis-je propriétaire de mon site après livraison ?</span>
-            <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
-          </button>
-          <div class="faq-answer">
-            <p>Oui, 100%. Le site vous appartient entièrement. Vous récupérez tous les fichiers sources. Vous pouvez l'héberger où vous voulez et le modifier comme vous le souhaitez.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">
-            <span>Le site sera-t-il visible sur Google ?</span>
-            <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
-          </button>
-          <div class="faq-answer">
-            <p>Tous nos sites sont optimisés pour le SEO de base : balises, vitesse, mobile-first. L'indexation Google prend généralement 2 à 4 semaines après la mise en ligne. Pour des résultats plus rapides, nous proposons aussi un accompagnement SEO local.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">
-            <span>Que se passe-t-il si je ne suis pas satisfait du résultat ?</span>
-            <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
-          </button>
-          <div class="faq-answer">
-            <p>On reprend jusqu'à ce que vous soyez satisfait, sans frais supplémentaires. Notre réputation repose sur votre satisfaction. Si après plusieurs révisions vous n'êtes toujours pas content, on vous rembourse intégralement.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">
-            <span>Faut-il payer un abonnement mensuel ?</span>
-            <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
-          </button>
-          <div class="faq-answer">
-            <p>Non, le prix affiché est un paiement unique. Les seuls frais récurrents sont l'hébergement et le nom de domaine (environ 50-100€/an selon votre choix), que vous gérez vous-même ou qu'on peut gérer pour vous moyennant un petit forfait annuel.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <div class="contact-wrapper fade-in">
-        <div class="contact-info">
-          <span class="section-badge">Contact</span>
-          <h2>Parlons de votre projet</h2>
-          <p>Répondez à quelques questions et recevez un devis personnalisé sous 24h. C'est gratuit et sans engagement.</p>
-          <div class="contact-details">
-            <div class="contact-item">
-              <span class="contact-icon">✉</span>
-              <a href="mailto:contact@lumara.fr">contact@lumara.fr</a>
-            </div>
-            <div class="contact-item">
-              <span class="contact-icon">⚡</span>
-              <span>Réponse garantie sous 24h</span>
-            </div>
-          </div>
-        </div>
-        <form class="contact-form" id="contactForm" novalidate>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name">Votre nom</label>
-              <input type="text" id="name" name="name" placeholder="Jean Dupont" required />
-              <span class="field-error" id="nameError"></span>
-            </div>
-            <div class="form-group">
-              <label for="email">Votre email</label>
-              <input type="email" id="email" name="email" placeholder="jean@exemple.fr" required />
-              <span class="field-error" id="emailError"></span>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="project">Type de projet</label>
-            <select id="project" name="project" required>
-              <option value="">Choisissez une formule</option>
-              <option value="onepage">Site One-Page (à partir de 299€)</option>
-              <option value="vitrine">Site Vitrine (à partir de 599€)</option>
-              <option value="ecommerce">Site E-commerce (à partir de 999€)</option>
-              <option value="autre">Autre / Je ne sais pas encore</option>
-            </select>
-            <span class="field-error" id="projectError"></span>
-          </div>
-          <div class="form-group">
-            <label for="message">Décrivez votre activité</label>
-            <textarea id="message" name="message" rows="4" placeholder="Ex : Je suis électricien à Aix-en-Provence, j'aimerais un site simple pour que mes clients me trouvent sur Google..." required></textarea>
-            <span class="field-error" id="messageError"></span>
-          </div>
-          <button type="submit" class="btn-submit" id="submitBtn">
-            <span class="btn-text">Envoyer ma demande</span>
-            <span class="btn-icon">→</span>
-          </button>
-          <div class="form-success" id="formSuccess">
-            <span>✓</span> Votre demande a bien été envoyée ! On vous répond sous 24h.
-          </div>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
+  <!-- ============ FOOTER ============ -->
   <footer class="footer">
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <span class="logo">✦ Lumara</span>
-          <p>Votre présence en ligne, sublimée par l'IA.</p>
-        </div>
-        <div class="footer-links">
-          <a href="#services">Services</a>
-          <a href="#portfolio">Réalisations</a>
-          <a href="#faq">FAQ</a>
-          <a href="#contact">Contact</a>
-        </div>
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#hero" class="logo logo--footer">
+          <span class="logo__mark" aria-hidden="true"></span>
+          <span class="logo__text">Lunmina</span>
+        </a>
+        <p class="footer__tag">Votre présence en ligne, sublimée.</p>
       </div>
-      <div class="footer-bottom">
-        <p>© 2026 Lumara. Tous droits réservés.</p>
-        <p>contact@lumara.fr</p>
+
+      <nav class="footer__col" aria-label="Liens du site">
+        <h4>Navigation</h4>
+        <a href="#services">Offres</a>
+        <a href="#portfolio">Réalisations</a>
+        <a href="#avantages">Pourquoi nous</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <a href="mailto:contact@lunmina.fr">contact@lunmina.fr</a>
+        <span>Lun — Ven, 9h à 18h</span>
+        <span>France entière, à distance</span>
       </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© 2026 Lunmina. Tous droits réservés.</span>
+      <span class="footer__links">
+        <a href="#">Mentions légales</a>
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">CGV</a>
+      </span>
     </div>
   </footer>
 
-  <script src="app.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
